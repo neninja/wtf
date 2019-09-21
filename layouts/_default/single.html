@@ -1,0 +1,31 @@
+{{ define "styles" }}
+<link href="{{ "/css/single.css" | urlize | relURL }}" rel="stylesheet">
+{{ end }}
+
+{{ define "title" }}
+<title>{{ .Page.Title }} | {{ .Site.Title }}</title>
+{{ end }}
+
+{{ define "main" }}
+<div class="header-post">
+<!--
+  Créditos:  https://github.com/lgaida/mediumish-gohugo-theme/blob/bd8907e9344aeec2b2b414eb981d4a63edded0fb/layouts/_default/single.html#L45
+-->
+{{ with .Params.cover }}
+{{ $cover_path := print "/img/covers/" . }}
+<img class="cover" src="{{ $cover_path | urlize | relURL }}" alt="thumbnail for this post">
+{{ end }}
+<span class="cover-sub">{{ .Params.coversub }}</span>
+
+<h1 class="title-post">{{ .Title }}</h1>
+<div class="info-post">
+  {{ .PublishDate.Format "2006-01-02" }} | {{ .ReadingTime }} min. | {{ partial "_shared/tags" . }}
+</div>
+</div>
+
+{{ .TableOfContents }}
+
+{{ .Content }}
+
+{{ end }}
+

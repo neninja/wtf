@@ -1,0 +1,13 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{{ with .Site.Params.logo }}
+<link rel="icon" href="{{ . | urlize | relURL }}">
+{{ end }}
+
+{{ with .Site.Params.meta.description }}<meta name="description" content="{{ . }}">{{ end }}
+{{ with .Site.Params.meta.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+<link href="{{ "/css/baseof.css" | urlize | relURL }}" rel="stylesheet">

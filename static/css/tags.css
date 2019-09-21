@@ -1,0 +1,10 @@
+.tags{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tag{
+  padding: 2em;
+  list-style: none;
+  margin: 1px solid black;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{- partial "_shared/head.html" . -}}
+    {{ block "styles" . }}{{ end }}
+    {{ block "title" . }}{{ end }}
+    <meta charset="utf-8">
+  </head>
+  <body>
+    {{- partial "_shared/navbar.html" . -}}
+    <div class="container">
+    {{ block "main" . }}{{ end }}
+    </div>
+  </body>
+</html>

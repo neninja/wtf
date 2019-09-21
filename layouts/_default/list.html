@@ -1,0 +1,34 @@
+{{ define "styles" }}
+<link href="{{ "/css/list.css" | urlize | relURL }}" rel="stylesheet">
+{{ end }}
+
+{{ define "title" }}
+<title>{{ .Page.Title }}</title>
+{{ end }}
+
+{{define "main" }}
+    <div class="main-content">
+
+      <div class="audio-wtf">
+        <audio controls>
+          <source src="/rei.opus" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+      </div>            
+
+        <!-- Posts Index
+        ================================================== -->
+        <section class="recent-posts">            
+            <div class="section-title">                
+                <h1>Posts</h1>                
+            </div>            
+            <div class="row listrecent">
+                {{ $post_paginator := .Paginate (.Pages) 25 }}
+                {{ range $post_paginator.Pages }}
+                    {{- partial "list/postbox.html" . -}}
+                {{end}}
+            </div>
+        </section>
+        {{- partial "list/pagination.html" $post_paginator -}}
+    </div>
+{{end}}
