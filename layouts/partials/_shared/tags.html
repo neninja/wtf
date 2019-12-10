@@ -1,9 +1,0 @@
-<!--
-  Créditos: https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/blob/master/layouts/partials/tags.html
--->
-<ul class="tags">
-{{ range .Params.tags }}
-{{ $href := print (absURL "tags/") (urlize .) }}
-<li><a class="tag" href="{{ $href }}">{{ . }}</a></li>
-{{ end }}
-</ul>

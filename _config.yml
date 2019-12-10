@@ -1,0 +1,15 @@
+name: wtf neni
+description: Blog sobre desenvolvimento de software
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+permalink: /:title/
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
