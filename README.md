@@ -1,4 +1,4 @@
-# [wtf](http://neni.dev/wtf)
+# [wtf](http://wtf.neni.dev)
 Conteúdo em markdown sobre assuntos que gosto de estudar.
 
 ## Funcionamento do projeto
