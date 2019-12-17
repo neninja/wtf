@@ -31,6 +31,24 @@ cd assets/assunto
 2. Acho importante separar o conteúdo (arquivos em markdown) da apresentação (no momento somente em html)
 3. O github-pages já automatiza a geração do site usando Jekyll, tornando desnecessária configuração prévia de ambiente de desenvolvimento. Dessa maneira é possível escrever diretamente o conteúdo de um assunto no próprio github.
 
+## Padronização de commits
+Todos os título de commit devem possuir a seguinte estrutura: ``<tipo>[(<escopo>)]: <mensagem>``. Sendo:
+- ``<tipo>``: a tipificação do commit, podendo ser relacionado:
+    - `post`: ao conteúdo de um post. Ex.: Adição, correção e exclusão
+    - `fix`: a correção de um mau funcionamento do jekyll, estilo ou comportamento. Ex.: Correção
+    - `feat`: a estrutura perceptível do blog com jekyll, estilização e comportamento. Ex.: Adição, modificação e exclusão
+    - `improve`: a estrutura não perceptível mas relacionada diretamente ao blog, como criação de funções javascript.
+    - `refactor`: a refatoração do código do relacionado diretamente ao blog. Ex.: Adição, modificação e exclusão
+    - `style`: estilização do código relacionado diretamente ao blog. Ex.: Correção de identação, modificação de fechamento de tag e etc.
+    - `doc`: a modificações em documentações, como templates do github, readme e etc
+    - `chore`: relacionado a todo escopo fora da atividade fim (blog), como o deploy ou gerenciamento de dependências
+- ``<escopo>``: obrigatório somente para especificar somente o assunto do `tipo` post. Ex.: post(dwm)
+- ``<mensagem>``: frase explicando no que o commit afeta a cronologia do projeto. Possui algumas regras de escrita, sendo:
+    1. Começar com um verbo no imperativo. Ex.: adiciona (ou add), modifica, remove, ignora e etc
+    2. Não iniciar com letra maiúscula e não encerrar com ponto final
+
+Regras adaptadas do [guideline do angular](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#commit) e do site [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/).
+
 ## Todo
 ### Apostilas
 * [ ] Go *parado*
