@@ -77,6 +77,9 @@ p, ul, ol {
     margin:0px;
     color:var(--ui-text-color)
 }
+ol {
+    padding-left: 2rem;
+}
 a {
     text-decoration:underline;
     color:var(--ui-link-color)
