@@ -1,5 +1,17 @@
-# [wtf](http://wtf.neni.dev)
-Conteúdo em markdown sobre assuntos que gosto de estudar.
+# [neni.dev](http://neni.dev)
+
+## Ambiente
+### Setup projeto
+- [Instalar ruby (windows)](https://jekyllrb.com/docs/installation/windows/)
+    - Testar instalação com: ``ruby -v`` e ``gem -v``
+- Instalar jekyll com ``gem install jekyll bundler``
+    - Testar instalação com: ``jekyll -v``
+- Clonar o projeto com ``git clone https://github.com/nenitf/neni.dev.git``
+- Executar ``bundle update github-pages``.
+
+### Desenvolver localmente
+- Ativar hotreload com ``bundle exec jekyll serve``
+- Acessar `localhost:4000`
 
 ## Funcionamento do projeto
 Escrever conteudo em `_posts/assunto.md`, commitar e dar push na branch master do github.
@@ -40,7 +52,7 @@ Todos os título de commit devem possuir a seguinte estrutura: ``<tipo>[(<escopo
     - `improve`: a estrutura não perceptível mas relacionada diretamente ao blog, como criação de funções javascript.
     - `refactor`: a refatoração do código do relacionado diretamente ao blog. Ex.: Adição, modificação e exclusão
     - `style`: estilização do código relacionado diretamente ao blog. Ex.: Correção de identação, modificação de fechamento de tag e etc.
-    - `doc`: a modificações em documentações, como templates do github, readme e etc
+    - `docs`: a modificações em documentações, como templates do github, readme e etc
     - `chore`: relacionado a todo escopo fora da atividade fim (blog), como o deploy ou gerenciamento de dependências
 - ``<escopo>``: obrigatório somente para especificar somente o assunto do `tipo` post. Ex.: post(dwm)
 - ``<mensagem>``: frase explicando no que o commit afeta a cronologia do projeto. Possui algumas regras de escrita, sendo:
@@ -60,6 +72,6 @@ Regras adaptadas do [guideline do angular](https://github.com/angular/angular/bl
 
 ### Frontend
 * [ ] Botão para copiar snippet
-* [ ] Botão dark/light mode salvando preferência no cache do navegador
+* [x] Botão dark/light mode salvando preferência no cache do navegador
 * [ ] Botão para aumentar, diminuir a fonte do texto
 * [ ] Abstrair tema

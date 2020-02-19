@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
     {% include meta.html %}
 
@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/reset.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/highlight.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
@@ -19,12 +20,11 @@
   <body>
 
     {% include menu.html %}
-
-      <aside></aside>
-
       <main role="main" class="container">
           {{ content }}
       </main>
+    {% include rodape.html %}
 
+    <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
   </body>
 </html>

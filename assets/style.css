@@ -1,197 +1,183 @@
 /* Inspirações:
+ * https://b2a3e8.github.io/jekyll-theme-console
  * https://pages-themes.github.io/hacker/
  */
 
 :root {
-    --light-black: #282c34; 
-    --dark-black: #16181d; 
-    --white: #abb2bf;
-    --light-red: #e06c75;
-    --dark-red: #be5046;
-    --green: #98c379;
-    --light-yellow: #e5c07b;
-    --dark-yellow: #d19a66;
-    --blue: #61afef;
-    --magenta: #c678dd;
-    --cyan: #56b6c2;
-    --light-grey: #5c6370;
-    --dark-grey: #4b5263;
+    --onedark-light-black: #282c34; 
+    --onedark-dark-black: #16181d; 
+    --onedark-dark-black: #16181d; 
+    --onedark-light-white: #DBDBDB;
+    --onedark-dark-white: #abb2bf;
+    --onedark-light-red: #e06c75;
+    --onedark-dark-red: #be5046;
+    --onedark-green: #98c379;
+    --onedark-light-yellow: #e5c07b;
+    --onedark-dark-yellow: #d19a66;
+    --onedark-blue: #61afef;
+    --onedark-magenta: #c678dd;
+    --onedark-cyan: #56b6c2;
+    --onedark-light-grey: #5c6370;
+    --onedark-dark-grey: #4b5263;
+
+    --ui-border-color: var(--onedark-green);
+    --ui-background-color: #000;
+    --ui-base-color: var(--onedark-light-white);
+    --ui-selection-text: var(--ui-background-color);
+    --ui-selection-background: var(--ui-base-color);
+    --ui-text-color: var(--ui-base-color);
+    --ui-link-color: var(--ui-base-color);
+    --ui-link-rodape-color: var(--ui-onedark-light-red);
+
+    --border: dashed 2px var(--ui-border-color);
 }
 
-:target {
-    background: red;
+button {
+    background: none;
+    border: none;
+    color: var(--ui-text-color);
+    font-family: 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:1rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+button:active, button:hover {
+    background: var(--ui-selection-background);
+    color:var(--ui-selection-text);
+}
+
+button::before{
+    content: "[ ";
+}
+
+button::after{
+    content: " ]";
 }
 
 body {
-    background-color: var(--light-black);
-    color: var(--white);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    background-color:var(--ui-background-color);
+    margin:0 auto;
+    padding:0;
+    font-family: 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size:1rem;
+    color:var(--ui-text-color);
+    text-align:left;
+    line-height:1.5 !important
 }
-
-html {
+h1, h2, h3, h4, h5, h6 {
     scroll-behavior: smooth;
+    font-size:1.5rem;
+    margin:0px;
+    margin-top:22px;
+    font-weight:bold;
+    color:var(--ui-text-color)
 }
-
-.container {
-    padding: 0 10%;
+p, ul, ol {
+    margin:0px;
+    color:var(--ui-text-color)
+}
+a {
+    text-decoration:underline;
+    color:var(--ui-link-color)
+}
+a:hover {
+    color:var(--ui-background-color);
+    background-color:var(--ui-base-color)
+}
+.container, header, footer {
+    width:90%;
+    max-width: 600px;
+    margin-bottom:25px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:25px;
 }
 
 img {
     width: 100%;
 }
-
-a {
-    color: var(--blue);
-}
-
-
-/*{{{Header
- */
-header {
-    padding: 2vh 0;
-}
-
-nav.menu ul {
-    display: flex;
-    justify-content: center;
-}
-
-nav.menu ul li {
-    padding: 0 1rem;
-    list-style: none;
-}
-/*}}}*/
-
-
-
-
-/*{{{Home
- */
-.posts ul {
-    padding-left: 6px;
-    margin: 0.8em 0.7em 0.8em 1.5em;
-}
-
-.posts li {
-    margin-bottom: .5em;
-    font-size: 1.2em;
-}
-
-.posts li::before {
-    color: var(--light-red);
-    content: '•';
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-}
-/*}}}*/
-
 .cover {
     margin: 1em 0;
     padding-top: 30vh;
     background-size: cover;
     background-position: center;
 }
-
-/*{{{Article
- */
-article {
-    overflow-wrap: break-word;
-    text-align: left;
+p {
+    word-wrap:break-word;
+    word-break:break-word;
+    white-space:pre-wrap
 }
 
-article p {
-    margin: 0.95em 0 1.2em;
-    padding: 0.2em;
-    line-height: 1.5;
+::selection {
+    background:var(--ui-selection-background);
+    color:var(--ui-selection-text)
+}
+::-moz-selection {
+    background:var(--ui-selection-background);
+    color:var(--ui-selection-text)
 }
 
-article ul {
-    padding-left: 6px;
-    margin: 0.8em 0.7em 0.8em 1.5em;
+/*{{{Menus*/
+.menu ul {
+    margin-top:12px;
+    margin-bottom:12px;
+    padding-left:0px;
+    list-style-type:none;
 }
-
-article li {
-    margin: 0.3em auto;
-}
-
-article li::before {
-    color: var(--light-red);
-    content: '•';
+.menu ul li {
+    margin-right:10px;
     display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+}
+.menu.cabecalho ul li:last-child {
+    float: right;
+}
+.menu ul li a {
+    text-decoration:none;
+    color:var(--ui-text-color)
+}
+.menu ul li a:hover {
+    text-decoration:none;
+    color:var(--ui-background-color);
+    background-color:var(--ui-base-color)
+}
+:not(.menu)>ul {
+    list-style-type:none
+    list-style:none;
+    padding-left:0
+}
+:not(.menu)>ul>li:before {
+    content:"-";
+    margin-right:9px
+}
+.toggle-theme {
+    flex: content;
+}
+header {
+    margin-top:25px;
+    margin-bottom:10px;
+    border-bottom: var(--border);
+}
+footer {
+    color:var(--ui-text-color);
+    margin:20px auto 15px;
+    text-align:right;
+    margin-bottom:20px;
+    border-top: var(--border);
+}
+footer.menu ul{
+    flex-direction: row-reverse;
+}
+footer.menu li a{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
+    color: var(--ui-link-rodape-color);
 }
 
-/*{{{Snippets
- */
-article div.highlight {
-    background-color: var(--cyan);
-}
-
-article div.highlight::before, div.highlight::after {
-    content: "```";
-    color: black;
-}
+/*}}}*/
 
 article .highlight pre {
     background-color: var(--dark-black);
     padding: 1%;
     overflow: auto;
 }
-/*}}}*/
-/*}}}*/
-
-/*{{{Títulos
- */
-
-h1, h2, h3, h4, h5, h6 {
-    scroll-behavior: smooth;
-    font-weight: 400;
-    color: var(--green);
-    letter-spacing: -0.03em;
-    text-shadow: 0 1px 1px rgba(0,0,0,0.1),0 0 5px rgba(181,232,83,0.1),0 0 10px rgba(181,232,83,0.1);
-}
-
-h1::before { content: "# " }
-h2::before { content: "## " }
-h3::before { content: "### " }
-h4::before { content: "### " }
-h5::before { content: "#### " }
-h6::before { content: "##### " }
-
-h1 {
-    font-size: 1.85em;
-    line-height: 1.14em;
-    margin-top: 1em;
-}
-
-h2 {
-    font-size: 1.7em;
-    line-height: 1.14em;
-    margin-top: 1em;
-}
-
-h3 {
-    font-size: 1.32em;
-    margin-top: 1em;
-}
-
-h4 {
-    font-size: 1.25em;
-    margin-top: 1em;
-}
-
-h5 {
-    font-size: 1.2em;
-    margin-top: 1em;
-}
-
-h6 {
-    font-size: 1.15em;
-    margin-top: 1em;
-}
-/*}}}*/
-
 /* vim: set fdm=marker: */

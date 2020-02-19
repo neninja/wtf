@@ -1,9 +1,12 @@
 <header>
-    <nav class="menu">
+    <nav class="menu cabecalho">
         <ul>
-            <li><a href="/">home</a></li>
-            <li><a href="http://neni.dev">neni.dev</a></li>
-            <li><button>theme</button></li>
+            {% for item in site.menu %}
+              <li>
+                <a href="{{ item.link }}">{{ item.texto }}</a>
+              </li>
+            {% endfor %}
+            <li><button class="toggle-theme">Dark</button></li>
         </ul>
     </nav>
 </header>

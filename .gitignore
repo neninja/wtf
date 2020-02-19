@@ -1,59 +1,31 @@
-# pandoc
-README.md.pdf
-README.pdf
-readme.md.pdf
-readme.pdf
-*.md.pdf
-*.csv.md
-*.csv.pdf
-*.csv.md.pdf
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# latex
-*.aux
-*.bbl
-*.blg
-*-blx.bib
-*.fdb_latexmk
-*.fls
-*.lof
-*.log
-*.lol
-*.lot
-*.maf
-*.mtc
-*.mtc0
-*.out
-*.run.xml
-*.synctex.gz
-*.toc
-*.xmpi
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# python
-__pycache__/
+# testing
+/coverage
 
-# npm
-.DS_Store
-node_modules
+# production
+/build
 /dist
-/tests/e2e/reports/
-selenium-debug.log
-# local env files
+/public
+
+# misc
+.DS_Store
 .env.local
-.env.*.local
-# Log files
+.env.development.local
+.env.test.local
+.env.production.local
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
 
-# php
-.phpunit.result.cache
-composer.lock
-vendor/
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
