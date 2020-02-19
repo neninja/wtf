@@ -7,3 +7,5 @@ layout: home
 Your browser does not support the audio element.
 </audio> 
 </div>
+
+[Planejamento de posts](https://trello.com/b/Gh3bguTX/wtf)
