@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<div class="remote-options">
+    <a href="{{ site.remote }}/edit/master/{{ page.path }}">Edite este post</a>
+    <a href="{{ site.remote }}/commits/master/{{ page.path }}">Histórico de edição</a>
+</div>
 {% include read_time.html %}
 {% if page.cover %}
 <div
@@ -10,7 +14,9 @@ layout: default
     {% endif %}></div>
 {% endif %}
 <article class="post">
+
     {{ content }}
+    
     <div class="date">
         Criado em {{ page.date | date: "%B %e, %Y" }}
     </div>

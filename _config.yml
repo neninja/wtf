@@ -34,6 +34,7 @@ rodape:
     - linkedin
     - email
         
+remote: https://github.com/nenitf/wtf
 
 permalink: /:title/
 
