@@ -34,6 +34,7 @@ function escolheTema(tema){
     switch(tema){
         case 'dark':
             root.style.setProperty('--ui-background-color', "#000")
+            root.style.setProperty('--ui-background-color-pre', "var(--onedark-dark-black)")
             root.style.setProperty('--ui-base-color', "var(--onedark-light-white)")
             root.style.setProperty('--ui-link-rodape-color', "var(--onedark-light-red)")
             root.style.setProperty('--ui-border-color', "var(--onedark-green)")
@@ -61,6 +62,7 @@ function escolheTema(tema){
             break
         case 'light':
             root.style.setProperty('--ui-background-color', "var(--onedark-light-white)")
+            root.style.setProperty('--ui-background-color-pre', "var(--onedark-dark-white)")
             root.style.setProperty('--ui-base-color', "var(--onedark-dark-black)")
             root.style.setProperty('--ui-link-rodape-color', "var(--onedark-dark-red)")
             root.style.setProperty('--ui-border-color', "var(--onedark-dark-grey)")

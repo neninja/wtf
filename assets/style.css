@@ -21,7 +21,8 @@
     --onedark-dark-grey: #4b5263;
 
     --ui-border-color: var(--onedark-green);
-    --ui-background-color: #000;
+    -black-ui-background-color: #000;
+    --ui-background-color-pre: var(--onedark-dark-black);
     --ui-base-color: var(--onedark-light-white);
     --ui-selection-text: var(--ui-background-color);
     --ui-selection-background: var(--ui-base-color);
@@ -30,6 +31,10 @@
     --ui-link-rodape-color: var(--ui-onedark-light-red);
 
     --border: dashed 2px var(--ui-border-color);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 button {
@@ -178,9 +183,21 @@ footer.menu li a{
 
 /*}}}*/
 
-article .highlight pre {
-    background-color: var(--dark-black);
+article div.highlight pre {
+    background-color: var(--ui-background-color-pre);
     padding: 1%;
     overflow: auto;
 }
+
+.remote-options {
+    display: flex;
+    justify-content: end;
+    border-bottom: var(--border);
+    padding-bottom: .5rem;
+}
+
+.remote-options a:not(:first-child){
+    margin-left: 1rem;
+}
+
 /* vim: set fdm=marker: */
