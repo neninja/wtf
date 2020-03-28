@@ -191,7 +191,7 @@ article div.highlight pre {
 
 .remote-options {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     border-bottom: var(--border);
     padding-bottom: .5rem;
 }

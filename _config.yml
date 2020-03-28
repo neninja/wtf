@@ -25,6 +25,12 @@ menu:
     - texto: /home
       link: /
 
+    - texto: /tags
+      link: /tags
+
+    - texto: /categories
+      link: /categories
+
     - texto: /nenitf
       link: http://neni.dev
 
