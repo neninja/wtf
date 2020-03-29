@@ -79,7 +79,8 @@ h1, h2, h3, h4, h5, h6 {
     color:var(--ui-text-color)
 }
 h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
-    background-color: var(--onedark-light-black);
+    color: var(--ui-selection-text);
+    background: var(--ui-selection-background);
 }
 p, ul, ol {
     margin:0px;
