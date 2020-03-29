@@ -17,3 +17,9 @@
 <meta property="og:title" content="{{ page.title }}" />
 <meta property="twitter:title" content="{{ page.title }}" />
 {% endif %}
+
+{% if page.cover %}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="og:image" content="{{ site.url }}/assets/img/covers/{{ page.cover }}" />
+<meta name="twitter:image" content="{{ site.url }}/assets/img/covers/{{ page.cover }}" />
+{% endif %}
