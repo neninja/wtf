@@ -1,7 +1,7 @@
 version: '2'
 
 services:
-  jekyll:
+  jekyll_wtf:
     image: jekyll/jekyll:latest
     command: jekyll serve --watch --force_polling
     ports:
