@@ -78,6 +78,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight:bold;
     color:var(--ui-text-color)
 }
+h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
+    background-color: var(--onedark-light-black);
+}
 p, ul, ol {
     margin:0px;
     color:var(--ui-text-color)
@@ -152,11 +155,13 @@ p {
 :not(.menu)>ul {
     list-style-type:none
     list-style:none;
-    padding-left:0
 }
 :not(.menu)>ul>li:before {
     content:"-";
     margin-right:9px
+}
+ul ul {
+    padding-left: 1rem;
 }
 .toggle-theme {
     flex: content;

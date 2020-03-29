@@ -13,6 +13,7 @@ layout: default
     alt="{{ page.coversub }}"
     {% endif %}></div>
 {% endif %}
+<div id="toc"></div>
 <article class="post">
 
     {{ content }}
@@ -21,3 +22,29 @@ layout: default
         Criado em {{ page.date | date: "%B %e, %Y" }}
     </div>
 </article>
+
+<script>
+    let headers = document.querySelectorAll('article h2,h3,h4,h5,h6')
+
+    let tocHTML = ""
+    let numeroHeaderAnterior = 1;
+    headers.forEach(function(header) {
+        let numeroHeader = header.tagName[1]
+        let href = `#${header.id}`
+        let label = header.textContent
+        if(numeroHeaderAnterior < numeroHeader){
+            tocHTML += `<ul>
+    <li><a href="${href}">${label}</a></li>`
+        } else if(numeroHeaderAnterior > numeroHeader) {
+            for(let i=0; i < numeroHeaderAnterior - numeroHeader; i++){
+                tocHTML += "</ul>"	
+            }
+            tocHTML += `<li><a href="${href}">${label}</a></li>`
+        } else {
+            tocHTML += `<li><a href="${href}">${label}</a></li>`
+        }
+        numeroHeaderAnterior = numeroHeader;
+    })
+
+    document.getElementById('toc').innerHTML = tocHTML
+</script>
