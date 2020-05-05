@@ -217,17 +217,19 @@ code {
     margin: 0;
     font-size: 85%;
     border-radius: 3px;
+    display: inline-block;
 }
 
 pre {
     background-color: rgba(220, 224, 228, 0.1) !important;
     border-radius: 3px;
+    padding: .5rem !important;
     margin: 1rem !important;
 }
 
 pre > code {
     background-color: transparent;
-    padding: 0;
+    padding: 0 0.5em;
 }
 /*}}}*/
 
