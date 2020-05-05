@@ -21,7 +21,7 @@
     --onedark-dark-grey: #4b5263;
 
     --ui-border-color: var(--onedark-green);
-    -black-ui-background-color: #000;
+    --black-ui-background-color: #000;
     --ui-background-color-pre: var(--onedark-dark-black);
     --ui-base-color: var(--onedark-light-white);
     --ui-selection-text: var(--ui-background-color);
@@ -227,6 +227,11 @@ margin: 1rem !important;
 pre > code {
 background-color: transparent;
 padding: 0;
+}
+
+blockquote {
+    padding: 0 1em;
+    border-left: .25em solid var(--ui-selection-background);
 }
 
 /* vim: set fdm=marker: */
