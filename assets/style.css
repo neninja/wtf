@@ -99,7 +99,7 @@ a:hover {
 }
 .container, header, footer {
     width:90%;
-    max-width: 600px;
+    max-width: 900px;
     margin-bottom:25px;
     margin-right:auto;
     margin-left:auto;
@@ -204,6 +204,29 @@ article div.highlight pre {
 
 .remote-options a:not(:first-child){
     margin-left: 1rem;
+}
+
+li p {
+    display: inline;
+}
+
+code {
+padding: .2em .4em;
+background-color: rgba(220, 224, 228, 0.1);
+margin: 0;
+font-size: 85%;
+border-radius: 3px;
+}
+
+pre {
+background-color: rgba(220, 224, 228, 0.1) !important;
+border-radius: 3px;
+margin: 1rem !important;
+}
+
+pre > code {
+background-color: transparent;
+padding: 0;
 }
 
 /* vim: set fdm=marker: */
