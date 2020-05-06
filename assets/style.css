@@ -99,7 +99,7 @@ a:hover {
 }
 .container, header, footer {
     width:90%;
-    max-width: 900px;
+    max-width: 600px;
     margin-bottom:25px;
     margin-right:auto;
     margin-left:auto;
