@@ -15,6 +15,7 @@
 - Cancelar a qualquer momento com `Ctrl-C` no terminal
 
 ### Desenvolver locamente (com docker-compose)
+- Instalar dependências com ``docker-compose up`` <!-- TODO rever comando duplicado... -->
 - Ativar "hot reload" com ``docker-compose up``
 - Acessar `localhost:4000`
 - Cancelar a qualquer momento com `Ctrl-C` no terminal
