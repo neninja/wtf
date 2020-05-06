@@ -212,7 +212,7 @@ li p {
 
 /*{{{ bloco de código */
 code {
-    padding: .2em .4em;
+    padding: .1em .2em;
     background-color: var(--ui-background-color-pre);
     margin: 0;
     font-size: 85%;
