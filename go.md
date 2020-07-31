@@ -1,7 +1,3 @@
----
-title: go
-published: false
----
 # Go
 ## O que é
 Go (ou Golang) é uma linguagem de programação criada pela Google para resolver seus problemas. Desenvolvida por Robert Griesemer, Rob Pike e Ken Thompson em 11/2009.

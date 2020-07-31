@@ -1,9 +1,3 @@
----
-title: git
-published: true
-category: apostila
-tags: [git]
----
 # Git
 ## O que é Git
 É um Sistema de Controle de Versão Distribuído (DVCS). Ele registra mudanças feitas em um ou mais arquivos ao longo do tempo de forma que você possa recuperar versões específicas.

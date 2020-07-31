@@ -1,11 +1,3 @@
----
-layout: post
-title: vim
-category: apostila
-tags: [vimscript]
-cover: uzumaki-poco.jpg
-coversub: "Foto da página 45 do volume 1 do mangá Uzumaki"
----
 # Vim
 ## Motivos
 - Leve
@@ -14,6 +6,7 @@ coversub: "Foto da página 45 do volume 1 do mangá Uzumaki"
 - Expansível com plugins
 - Descarta o uso do mouse
 - Possui todas funcionalidades básicas de um editor (sintaxe, sugestões de texto, pesquisa, substituição ... )
+
 > Ainda não sei a configurar coisas básicas que um programador precisa, como debug e intellisense (go to definition, complete e etc)
 
 <!-- ## Instalação -->
@@ -49,6 +42,7 @@ coversub: "Foto da página 45 do volume 1 do mangá Uzumaki"
 - ``B`` volta para o final de uma `WORD`
 - ``:25`` linha ``25``
 - ``%`` início ou final do fechamento de `{[(<`
+
 > "word" é uma palavra delimitada por non-keyword (pontuação, espaço e números) e "WORD" por espaço somente
 
 #### Scroll
