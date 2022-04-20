@@ -1,12 +1,6 @@
-# wtf neni
+# blog
 
-Posts do [blog](https://dev.to/nenitf)
+## Setup local
 
-## Atualização dos textos
-
-```sh
-php DevToU.php
-
-# atualização do script
-#curl https://raw.githubusercontent.com/nenitf/devtou/main/app/DevToU.php -o DevToU.php
-```
+- Baixar [hugo](https://github.com/gohugoio/hugo/releases)
+- Subir servidor com ``hugo server -D -w``
