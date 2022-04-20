@@ -1,8 +1,0 @@
-baseURL = "http://wtf.neni.dev/"
-languageCode = "pt-br"
-title = "Wtf Neni"
-description = "Blog de e para desenvolvimento de software"
-theme = "basico"
-
-[params]
-repo = "http://github.com/nenitf/wtf"
