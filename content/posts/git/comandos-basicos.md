@@ -7,32 +7,7 @@ tags: ["git"]
 draft: false
 ---
 
-Git um Sistema de Controle de Versão Distribuído (DVCS). Ele registra mudanças feitas em um ou mais arquivos ao longo do tempo de forma que você possa recuperar versões específicas. Cada "estado" do arquivo é salvo através de *commits*, cujo possuem *hashes* (identificadores únicos) e mensagens.
-
-## Configurando ambiente
-Siga as [instruções](https://git-scm.com/downloads) oficiais do git. Caso utilize Windows, use o programa git bash instalado para os comandos desse post.
-
-## Estados de arquivos
-Um arquivo no git podem estar em 1 dos 4 estágios:
-* `untracked`: não versionado no commit anterior;
-* `not staged`: sofreu mudanças desde o ultimo commit e ainda não foi selecionado para o próximo commit;
-* `staged`: sofreu mudanças e foi selecionado para o próximo commit;
-* `commited`: não foram modificados desde o ultimo commit;
-
-## Comandos
-
-Vou falar neste tópico sobre os comandos do git via terminal. Para usar no Windows basta ir até pasta do seu projeto, apertar botão direito do mouse e escolher "git bash".
-Comandos são compostos de ``git`` mais a especificação dele. Por exemplo, para transformar um arquivo de `not staged` para `staged`, basta usar ``git add <arquivo>``.
-Muitos comandos terão parâmetros, como por exemplo o nome de um arquivo. Nessas situações será usada a notação ``<valor>``. Em caso de duvida, digite o comando completo com help no final como ``git add --help``.
-Antes de começar a testar os comandos do git é obrigatório um mínimo de configurações que são feitas através da linha de comando.
-1. ``git config --global user.name "Seu Nome Aqui"``
-1. ``git config --global user.email "seuemail@mail.com"``
-1. ``git config --global color.ui true``
-1. ``git config --global core.editor "seu editor de texto favorito"``
-
----
-
-### init
+## init
 
 - Estrutura: ``git init``
 - Descrição: Todas mudanças realizadas versionadas com o git ficam na pasta `.git` na raiz do projeto. Para ter esse diretório - e consequentemente utilizar o git - das duas uma, ou clona um objeto (baixa um existente) com ``git clone <endereco>`` ou inicializa o git na pasta com ``init``
@@ -41,7 +16,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### clone
+## clone
 
 - Estrutura: ``git clone <url ou path>``
 - Descrição: Copia e cola projeto de acordo com a url
@@ -52,14 +27,14 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### status
+## status
 
 - Estrutura: ``git status``
 - Descrição: Verifica a situação dos arquivos do projeto deve-se utilizar.
 
 ---
 
-### add
+## add
 
 - Estrutura: ``git add <file> <file> ...``
     - ``<file>`` é um arquivo ou diretório, caso seja usado `.` adiciona tudo do atual diretório
@@ -71,7 +46,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### commit
+## commit
 
 - Estrutura: ``git commit``
 - Descrição: O *commit* é o responsável por gravar as alterações dos arquivos stageados no projeto. É pelo histórico de *commits* que é possível retroceder até determinada versão do projeto. Os principais características que todo *commit* possui é seu *hash* (identificador), data, autor e mensagem. Com o comando é aberto um editor de texto para escrever a mensagem.
@@ -86,7 +61,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### remote
+## remote
 
 - Estrutura: ``git remote <comando>``
     - ``<comando>`` comandos relacionados ao *remote*
@@ -97,7 +72,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### push
+## push
 
 - Estrutura: ``git push <remote> <branch>``
     - `<remoto>` nome do *remote*, normalmente *origin* ou *upstream*
@@ -106,9 +81,9 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-<!--### tag-->
+<!-- ## tag-->
 
-### log
+## log
 
 - Estrutura: ``git log``
 - Descrição: Lista os *commits*, podendo ser usado abaixo:
@@ -117,7 +92,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### merge
+## merge
 
 - Estrutura: ``git merge <branch nova>``
 - Descrição: Mescla duas *branches*. Caso nenhum *commit* tenha sido criado na *branch* de origem durante os *commits* da nova *branch*, o git vai juntar todos os *commits* diretamente (sem um novo *commit* com separação e referência da *branch*). Essa situação é uma funcionalidade do git chamada *fast-forward*.
@@ -128,9 +103,9 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-<!--### rebase-->
+<!-- ## rebase-->
 
-### checkout
+## checkout
 
 - Estrutura: ``git checkout <referência>``
     - ``<referência>`` *branch*, *hash* do *commit* ou arquivo/folder precedido de ``--``
@@ -145,7 +120,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### reset
+## reset
 
 - Estrutura: ``git reset <referência>``
     - ``<referência>`` *hash* do *commit*, a posição relativa ao HEAD (sendo um anterior `HEAD~1`, dois `HEAD~2` e etc) ou um arquivo para remover da [área de staged](#add).
@@ -155,7 +130,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### bisect
+## bisect
 
 - Estrutura: ``git bisect <comando>``
     - ``<comando>`` comandos relacionados ao *bisect*
@@ -176,9 +151,9 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-<!-- ### Branch -->
+<!-- ## Branch -->
 
-### fetch
+## fetch
 
 - Estrutura: ``git fetch``
 - Descrição: Atualiza as referências das *branches* dos *remotes*
@@ -186,7 +161,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
     - ``git fetch <remote> <branch>`` retorna as referências especificas de uma *branch* de um *remote*
         - Após trazer a referência é possível ir para essa branch com ``git checkout <branch>``
 
-### pull
+## pull
 
 - Estrutura: ``git pull <remoto> <branch>``
     - `<remoto>` nome do *remote*, normalmente *origin* ou *upstream*
@@ -195,7 +170,7 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-### stash
+## stash
 
 - Estrutura: ``git stash <comando>``
     - `<comando>` comandos relacionados ao *stash*
@@ -214,94 +189,3 @@ Antes de começar a testar os comandos do git é obrigatório um mínimo de conf
 
 ---
 
-## Fluxos de trabalho
-
-### Individual
-
-É mais simples versionar o código quando está trabalhando sozinho em um projeto, portanto essa seção abordará o escopo de comandos mínimos necessários para essa situação.
-Abaixo uma figura no fluxo de trabalho explicado na seção:
-
-```
-+--------+ +---------------+
-|git init| |git clone <url>|
-+---+----+ +---+-----------+
-    |          |
-    v          v
-+-----------------+                  +--------------------+
-|  cria/deleta    |<-----------------+git push origin HEAD|
-|modifica arquivos|<--------+        +--------------------+
-+-------+---------+         |                  ^
-        |                   |                  |
-        v                   |                  |
-+-----------------+    +----+------------------+------------+
-|git add <arquivo>+--->|git commit -m "<mensagem de commit>"|
-+-----------------+    +------------------------------------+
-```
-
----
-
-### Gitflow
-
-- [Instruções Gitflow](https://danielkummer.github.io/git-flow-cheatsheet/index.pt_BR.html)
-- [Post original Gitflow](https://nvie.com/posts/a-successful-git-branching-model/)
-- [Transcrição do cli do gitflow para o git comum](https://www.atlassian.com/br/git/tutorials/comparing-workflows/gitflow-workflow)
-
-<!-- github flow? -->
-
-## Configurações
-
-### SSH
-
-> [Instruções originais](https://gist.github.com/nenitf/433e85b49acc802479654c75535eea2c)
-
-1. Instalar gerador de ssh
-    - ubuntu: ``sudo apt install openssh-client``
-2. Gerar chave ``ssh-keygen -t rsa -C "my@email.com"``
-    - Pode dar enter em todas opções
-3. Ver chave pública (`.ssh/id_rsa.pub`) e colocar no github
-4. Permitir uso da ssh pelo github/gitlab ``ssh -T git@github.com``
-    - Responder yes se questionado
-
-> [Créditos ao Leandro Ramos](https://www.youtube.com/watch?v=tjZEplICR5g)
-
-Caso existam multiplas keys o ideal é configurar no arguivo `~/.ssh/config`.
-Exemplo de uma configuração abaixo:
-
-```
-Host github.com-oab
-  Hostname ssh.github.com
-  Port 443
-  User git
-  IdentityFile ~/.ssh/id_rsa
- 
-Host github.com
-  Hostname ssh.github.com
-  Port 443
-  User git
-  IdentityFile ~/.ssh/id_rsa_nenitf
-  
- Host gitlab.com
-  Hostname altssh.gitlab.com
-  Port 443
-  User git
-  IdentityFile ~/.ssh/id_rsa-gitlab
-```
-
-### Projeto
-
-#### Gitignore
-
-Para fazer o git ignorar arquivo (normalmente de configuração de IDE, logs e etc) é criado na raiz do projeto o arquivo `.gitignore`.
-
-## Ferramentas
-
-### Extensões de editores/IDEs
-
-- Vim:
-    - [fugitive](https://github.com/tpope/vim-fugitive): integração de comandos do git
-    - [gitgutter](https://github.com/airblade/vim-gitgutter): `+`, `-` e `~` no editor
-    - [gv](https://github.com/junegunn/gv.vim): exibição do historico de commits
-- VSCode:
-    - Integração própria
-    - Git blame
-    - Git lens
