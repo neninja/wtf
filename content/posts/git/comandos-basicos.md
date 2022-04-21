@@ -2,7 +2,6 @@
 title: "Comandos básicos"
 summary: "Manual de sobrevivência do git"
 date: 2020-07-29T10:32:31-03:00
-toc: true
 tags: ["git"]
 draft: false
 ---
