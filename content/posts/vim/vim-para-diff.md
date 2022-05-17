@@ -1,5 +1,5 @@
 ---
-title: "Diff com vim"
+title: "Diff com Vim"
 summary: "Vim como ferramenta para diferenciar dois arquivos"
 date: 2021-07-27T10:00:00-03:00
 tags: ["vim"]

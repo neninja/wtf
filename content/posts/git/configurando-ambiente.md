@@ -1,6 +1,6 @@
 ---
 title: "Configurando ambiente"
-summary: "Nome, email e SSH"
+summary: "Nome, email e SSH do Git"
 date: 2020-07-29T10:32:31-03:00
 toc: true
 tags: ["git"]

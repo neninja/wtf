@@ -1,6 +1,6 @@
 ---
 title: "Comandos básicos"
-summary: "O básico para suportar e amar o vim"
+summary: "O básico para suportar e amar o Vim"
 date: 2020-07-29T10:00:00-03:00
 tags: ["vim"]
 draft: false

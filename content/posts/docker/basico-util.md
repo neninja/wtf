@@ -1,6 +1,6 @@
 ---
 title: "Utilização básica"
-summary: "Fluxo de utilização comum em projetos pessoais"
+summary: "Fluxo de utilização comum em projetos pessoais com Docker"
 date: 2021-07-19T10:00:00-03:00
 tags: ["docker"]
 draft: false

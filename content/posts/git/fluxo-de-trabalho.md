@@ -1,6 +1,6 @@
 ---
 title: "Fluxo de trabalho"
-summary: "Utilização comum do git"
+summary: "Utilização comum do Git"
 date: 2020-07-29T10:32:31-03:00
 toc: true
 tags: ["git"]

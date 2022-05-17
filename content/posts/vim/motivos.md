@@ -1,6 +1,6 @@
 ---
-title: "Motivos para utilizar o vim"
-summary: "Por que aderir ao vim?"
+title: "Motivos para utilizar o Vim"
+summary: "Por que aderir ao Vim?"
 date: 2020-07-29T10:00:00-03:00
 tags: ["vim"]
 draft: false
