@@ -1,7 +1,7 @@
 ---
 title: "Subdomínio no Github Pages e Google Domains"
 summary: "Projetos hospedados com domínio personalizado"
-date: 2022-04-20T10:00:00-03:00
+date: 2021-03-18T10:00:00-03:00
 tags: ["deploy", "github"]
 draft: false
 ---

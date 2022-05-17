@@ -1,7 +1,7 @@
 ---
 title: "Compiler, make e errorformat"
 summary: "Execução de comandos no vim"
-date: 2022-04-20T10:00:00-03:00
+date: 2020-08-24T10:00:00-03:00
 tags: ["vim"]
 draft: false
 ---

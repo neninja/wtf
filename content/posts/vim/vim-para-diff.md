@@ -1,7 +1,7 @@
 ---
 title: "Diff com vim"
 summary: "Vim como ferramenta para diferenciar dois arquivos"
-date: 2022-04-20T10:00:00-03:00
+date: 2021-07-27T10:00:00-03:00
 tags: ["vim"]
 draft: false
 ---
