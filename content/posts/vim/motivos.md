@@ -6,15 +6,14 @@ tags: ["vim"]
 draft: false
 ---
 
-- Leve
-- Open source
+- Absurdamente leve
+- Open source, livre e gratuito
 - Popular e bem estabelecido na comunidade (foi criado em 1991)
 - Utilizável pelo terminal
-- Cheio de atalhos/comando para navegação
+- Por ser estilo modal, suporta atalhos/comandos mais "naturais"
 - Multi plataforma
 - Configurável através de arquivos que podem ser versionados
 - Expansível com plugins
-- Não precisa de mouse - *mouseless*
-- Possui o suficiente para programar (sintaxe, sugestões de texto, pesquisa, substituição e etc)
-
-Porém, precisa saber configurar *debug* e *intellisense* (*go to definition* e *autocomplete*)
+- Torna mouse opcional
+- Possui o suficiente para programar (sintaxe, sugestões de texto, pesquisa, substituição etc)
+    - Caso queira, precisa entender as limitações e saber configurar individualmente *debug*, *go to definition* e *autocomplete* por linguagem
