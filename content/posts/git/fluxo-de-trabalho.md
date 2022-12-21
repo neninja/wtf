@@ -18,27 +18,32 @@ Um arquivo no git podem estar em 1 dos 4 estágios:
 
 ## Fluxos de trabalho
 
+
+{{< gravizo "Fluxo de desenvolvimento" >}}
+  digraph G {
+    node [shape=box]
+    init [label="git init"];
+    clone [label="git clone <url>"];
+    work [label="cria/deleta/modifica arquivos"];
+    add [label="git add <arquivo>"];
+    commit [label="git commit -m '<mensagem de commit>'"];
+    push [label="git push origin HEAD"];
+
+    init -> work;
+    clone -> work;
+    commit -> work;
+    push -> work;
+
+    work -> add;
+    add -> commit -> push;
+  }
+{{< /gravizo >}}
+
 ### Individual
 
 É mais simples versionar o código quando está trabalhando sozinho em um projeto, portanto essa seção abordará o escopo de comandos mínimos necessários para essa situação.
 Abaixo uma figura no fluxo de trabalho explicado na seção:
 
-```
-+--------+ +---------------+
-|git init| |git clone <url>|
-+---+----+ +---+-----------+
-    |          |
-    v          v
-+-----------------+                  +--------------------+
-|  cria/deleta    |<-----------------+git push origin HEAD|
-|modifica arquivos|<--------+        +--------------------+
-+-------+---------+         |                  ^
-        |                   |                  |
-        v                   |                  |
-+-----------------+    +----+------------------+------------+
-|git add <arquivo>+--->|git commit -m "<mensagem de commit>"|
-+-----------------+    +------------------------------------+
-```
 
 ---
 
