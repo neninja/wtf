@@ -74,6 +74,9 @@ menu:
     - identifier: portfolio
       url: "https://neni.dev"
       name: Neni
+    - identifier: snippets
+      url: "http://s.neni.dev"
+      name: Snippets
 
 # Privacy configurations: https://gohugo.io/about/hugo-and-gdpr/
 privacy:
