@@ -6,6 +6,8 @@ tags: ["vim"]
 draft: false
 ---
 
+> **TL;DR** ``:vert diffsplit outro.txt``
+
 Corriqueiramente preciso comparar dois arquivos, e no vim é fácil de ser feito:
 
 1. Abra o arquivo
@@ -15,5 +17,3 @@ Corriqueiramente preciso comparar dois arquivos, e no vim é fácil de ser feito
 5. Inicialize o *diffmode* ``:diffthis``
 
 > Resumo do passo 3, 4 e 5 caso só haja duas `windows`: ``:windo diffthis``
-
-> Resumo do passo 2, 3, 4 e 5 ``:vert diffsplit outro.txt``
