@@ -12,6 +12,11 @@ draft: false
 ### Linux
 
 ### Windows
+
+### Dicas
+- Limpar imagens, containers antigos
+
+### Exemplos com react
 -->
 
 ## Comandos
