@@ -1,5 +1,5 @@
 ---
-title: "Comandos básicos"
+title: "Comandos básicos do Git"
 summary: "Manual de sobrevivência do Git"
 date: 2020-07-29T10:32:31-03:00
 tags: ["git"]

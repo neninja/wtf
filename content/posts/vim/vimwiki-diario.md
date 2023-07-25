@@ -1,5 +1,5 @@
 ---
-title: "Meu fluxo de trabalho com vimwiki"
+title: "Meu fluxo de trabalho com Vimwiki"
 summary: "Utilização como diário para: reunioes e wiki"
 date: 2023-03-18T02:57:00-03:00
 tags: ["vim"]

@@ -1,6 +1,6 @@
 ---
-title: "Make no fluxo de trabalho"
-summary: "Simpĺificação de comandos com make"
+title: "Facilitando a memorização de projetos com make"
+summary: "Simpĺificação de comandos"
 date: 2022-12-21T16:32:31-03:00
 toc: true
 tags: ["bash", "git"]
