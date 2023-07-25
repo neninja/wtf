@@ -20,8 +20,8 @@ Host github.com
   Port 443
   User git
   IdentityFile ~/.ssh/id_rsa-gitlab
-</code></pre><h2 id=gpg>GPG</h2><p>Para tornar os commits verificados no Gothub:</p><ol><li>Gere a chave</li></ol><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>gpg --full-generate-key
-</code></pre></div><ol start=2><li><p>Escolha <code>RSA</code> e 0 para não expirar, informe seu nome e e-mail, configure senha (pode ser em branco) e confirme</p></li><li><p>Liste as chaves</p></li></ol><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>gpg --list-secret-keys --keyid-format<span class=o>=</span>long
+</code></pre><h2 id=gpg>GPG</h2><p>Para tornar os commits verificados no Github:</p><ol><li>Gere a chave</li></ol><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>gpg --full-generate-key
+</code></pre></div><ol start=2><li><p>Escolha <code>RSA</code> e <code>0</code> para não expirar, informe seu nome e e-mail, configure senha (pode ser em branco) e confirme</p></li><li><p>Liste as chaves</p></li></ol><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>gpg --list-secret-keys --keyid-format<span class=o>=</span>long
 </code></pre></div><ol start=4><li>Pegue o id da chave que está em <code>sec rsa4096/IDDACHAVE 2022-08-03 [SC]</code></li><li>Exiba a chave</li></ol><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>gpg --armor --export IDDACHAVE
 </code></pre></div><ol start=6><li>Copie <strong>todo</strong> conteúdo, incuindo <code>-----BEGIN PGP PUBLIC KEY BLOCK-----</code> até <code>-----END PGP PUBLIC KEY BLOCK-----</code> e salve no Github (<code>Settings > GPG > New GPG key</code>)</li><li>Atualize o git</li></ol><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>git config --global --unset gpg.format
 git config --global user.signingkey IDDACHAVE
