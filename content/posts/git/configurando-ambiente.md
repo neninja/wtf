@@ -55,3 +55,37 @@ Host github.com
   User git
   IdentityFile ~/.ssh/id_rsa-gitlab
 ```
+
+## GPG
+
+Para tornar os commits verificados no Github:
+
+1. Gere a chave
+
+```sh
+gpg --full-generate-key
+```
+
+2. Escolha `RSA` e `0` para não expirar, informe seu nome e e-mail, configure senha (pode ser em branco) e confirme
+
+3. Liste as chaves
+
+```sh
+gpg --list-secret-keys --keyid-format=long
+```
+
+4. Pegue o id da chave que está em `sec   rsa4096/IDDACHAVE 2022-08-03 [SC]`
+5. Exiba a chave
+
+```sh
+gpg --armor --export IDDACHAVE
+```
+
+6. Copie **todo** conteúdo, incuindo `-----BEGIN PGP PUBLIC KEY BLOCK-----` até `-----END PGP PUBLIC KEY BLOCK-----` e salve no Github (`Settings > GPG > New GPG key`)
+7. Atualize o git
+
+```sh
+git config --global --unset gpg.format
+git config --global user.signingkey IDDACHAVE
+git config --global commit.gpgsign true
+```
