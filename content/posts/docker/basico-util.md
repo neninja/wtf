@@ -25,6 +25,7 @@ Utilizando [Docker Compose](https://docs.docker.com/compose/install/), dentro do
 
 - ``docker-compose up -d`` Cria os containers sem travar o terminal
   - ``docker-compose up -d --build`` Cria os containers mas rebuildando as imagens. Útil quando o `Dockerfile` foi modificado e deve ser relido.
+  - simplifica utilização de ``docker build -t nome_do_container .`` ``docker container run -p 3000:3000 nome_do_container``
 - ``docker-compose down`` Para e apaga todos containers criados
 - ``docker-compose exec <service-name> <comando> <param1> <param2>...`` Executa um comando dentro do container, usos mais comuns:
   - ``docker-compose exec app composer install`` Instala as dependências do composer
