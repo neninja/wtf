@@ -7,6 +7,18 @@
             </div>
 
             <h1 class="">{{- .Title -}}</h1>
+
+            {{ with .Params.tags }}
+            <ul class="tags">
+            {{ range . }}
+            <li>
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="">
+                    #{{- . -}}
+                </a>
+            </li>
+            {{ end }}
+            </ul>
+            {{ end }}
             {{if .Site.Params.Repo}}
             <ul class="meta">
                 <li>

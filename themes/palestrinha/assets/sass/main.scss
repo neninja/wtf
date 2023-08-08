@@ -1,6 +1,7 @@
 @import './themes.scss';
 @import './_helpers.scss';
 @import './layouts/list.scss';
+@import './layouts/single.scss';
 
 body {
     font-family: sans-serif;
@@ -46,7 +47,9 @@ ul.meta {
     list-style: none;
 }
 
-.highlight pre {
+pre {
+    color: v("text-color-pre");
+    background: v("background-color-pre") !important;
     padding: 1rem;
 }
 
