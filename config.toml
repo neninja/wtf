@@ -1,0 +1,7 @@
+baseURL = "https://wtf.neni.dev"
+title = "WTF"
+theme = "palestrinha"
+
+[params]
+repo = "http://github.com/nenitf/blog_projeto-bilingue"
+faviconEmoji = "✨"

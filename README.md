@@ -3,4 +3,7 @@
 ## Setup local
 
 - Baixar [hugo](https://github.com/gohugoio/hugo/releases)
-- Subir servidor com ``hugo server -D -w``
+- Subir servidor com
+```sh
+hugo server -D -w
+```

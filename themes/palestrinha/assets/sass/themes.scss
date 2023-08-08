@@ -1,0 +1,77 @@
+$onedark-light-black: #282c34; 
+$onedark-dark-black: #16181d; 
+$onedark-light-white: #DBDBDB;
+$onedark-dark-white: #abb2bf;
+$onedark-light-red: #e06c75;
+$onedark-dark-red: #be5046;
+$onedark-green: #98c379;
+$onedark-light-yellow: #e5c07b;
+$onedark-dark-yellow: #d19a66;
+$onedark-blue: #61afef;
+$onedark-magenta: #c678dd;
+$onedark-cyan: #56b6c2;
+$onedark-light-grey: #5c6370;
+$onedark-dark-grey: #4b5263;
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --dynamic-black: #{$onedark-light-black};
+        --dynamic-white: #{$onedark-light-white};
+        --dynamic-red: #{$onedark-light-red};
+        --dynamic-yellow: #{$onedark-light-yellow};
+        --dynamic-blue: #{$onedark-blue};
+        --dynamic-magenta: #{$onedark-magenta};
+        --dynamic-cyan: #{$onedark-cyan};
+        --dynamic-green: #{$onedark-green};
+
+        --base-color: #{$onedark-dark-black};
+        --text-color: var(--base-color);
+        --background-color: white;
+
+        --link-color: blue;
+        --accent-color: #{$onedark-magenta};
+        --success-color: #{$onedark-green};
+        --warning-color: #{$onedark-dark-yellow};
+        --danger-color: #{$onedark-dark-red};
+
+        --text-color-pre: #{$onedark-dark-black};
+        --background-color-pre: #{$onedark-light-white};
+
+        --border-color: #{$onedark-dark-grey};
+        --border: dashed 2px var(--border-color);
+    }
+}
+
+/* Inspirações:
+ * https://b2a3e8.github.io/jekyll-theme-console
+ * https://pages-themes.github.io/hacker/
+ */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --dynamic-black: #{$onedark-dark-black};
+        --dynamic-white: #{$onedark-dark-white};
+        --dynamic-red: #{$onedark-dark-red};
+        --dynamic-yellow: #{$onedark-dark-yellow};
+        --dynamic-blue: #{$onedark-blue};
+        --dynamic-magenta: #{$onedark-magenta};
+        --dynamic-cyan: #{$onedark-cyan};
+        --dynamic-green: #{$onedark-green};
+
+        --base-color: #{$onedark-light-white};
+        --text-color: var(--base-color);
+        --background-color: #000;
+
+        --link-color: #{$onedark-blue};
+        --accent-color: #{$onedark-magenta};
+        --success-color: #{$onedark-green};
+        --warning-color: #{$onedark-light-yellow};
+        --danger-color: #{$onedark-light-red};
+
+        --text-color-pre: var(--text-color);
+        --background-color-pre: #{$onedark-dark-black};
+
+        --border-color: #{$onedark-green};
+        --border: dashed 2px var(--border-color);
+    }
+}

@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main>
+    <article>
+        <header class="">
+            <div>
+                <a href="{{.Site.BaseURL}}">Índice</a>
+            </div>
+
+            <h1 class="">{{- .Title -}}</h1>
+            {{if .Site.Params.Repo}}
+            <ul class="meta">
+                <li>
+                    <a href="{{.Site.Params.Repo}}/edit/main/content/{{replace .File.Path "\\" "/"}}">Sugira modificações</a>
+                </li>
+                <li>{{ partial "time-post" . }}</li>
+            </ul>
+            {{end}}
+        </header>
+
+        {{- .Content -}}
+    </article>
+</main>
+{{ end }}

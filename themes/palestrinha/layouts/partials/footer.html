@@ -1,0 +1,14 @@
+<footer>
+    <nav>
+        <ul class="meta">
+            {{ range .Params.tags }}
+            <li>
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="">
+                    {{- . -}}
+                </a>
+            </li>
+            {{ end }}
+            <li><a href="http://neni.dev">neni.dev</a></li>
+        </ul>
+    </nav>
+</footer>

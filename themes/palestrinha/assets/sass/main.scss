@@ -1,0 +1,61 @@
+@import './themes.scss';
+@import './_helpers.scss';
+@import './layouts/list.scss';
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5em;
+    padding: 0 2%;
+    margin: auto;
+    background-color: v("background-color");
+    color: v("text-color");
+}
+
+@media (min-width:576px) {
+    body {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    body {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    body {
+        max-width: 1140px
+    }
+}
+
+dl, ol, ul {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul.meta {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.highlight pre {
+    padding: 1rem;
+}
+
+blockquote {
+    border-left: 0.25rem solid var(--accent-color);
+    padding-left: 1rem;
+    margin-left: 0;
+}
+
+a {
+    color: v("link-color");
+}
