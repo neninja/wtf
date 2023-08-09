@@ -1,7 +1,5 @@
 @import './themes.scss';
 @import './_helpers.scss';
-@import './layouts/list.scss';
-@import './layouts/single.scss';
 
 body {
     font-family: sans-serif;
@@ -41,12 +39,6 @@ dl, ol, ul {
   margin-bottom: 1rem;
 }
 
-ul.meta {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
 pre {
     color: v("text-color-pre");
     background: v("background-color-pre") !important;
@@ -61,4 +53,23 @@ blockquote {
 
 a {
     color: v("link-color");
+}
+
+header.menu {
+    margin: 1.2rem 0;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+time.datepost {
+    font-size: 0.8rem;
+    font-style: italic;
 }

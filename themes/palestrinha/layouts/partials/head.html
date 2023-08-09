@@ -21,4 +21,12 @@
 
     {{ $style := resources.Get "/sass/main.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+
+    {{ if .IsPage}}
+    {{ $style := resources.Get "/sass/layouts/single.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{else}}
+    {{ $style := resources.Get "/sass/layouts/list.scss" | toCSS | minify | fingerprint }}
+    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{end}}
 </head>

@@ -3,3 +3,20 @@
     justify-content: space-evenly;
     list-style: none;
 }
+
+ul.cards {
+    list-style: none;
+    padding: 0;
+
+    li.card-item:not(:first-child) {
+        margin-top: 2rem;
+    }
+
+    h1 {
+        margin: 0.2rem 0 0.5rem 0;
+    }
+
+    p {
+        margin: 0;
+    }
+}

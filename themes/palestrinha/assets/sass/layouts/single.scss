@@ -1,6 +1,38 @@
 ul.tags {
+    padding: 0;
+    list-style: none;
     display: flex;
     gap: 1rem;
-    list-style: none;
+}
+
+ul.meta {
     padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+.container-singlepost-title {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    margin: 0.2rem 0 0.5rem 0;
+
+    h1 {
+        margin: 0;
+    }
+
+    a.fixme {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+
+        ::before {
+            content: '// '
+        }
+    }
+}
+
+article {
+    margin-bottom: 2rem;
 }

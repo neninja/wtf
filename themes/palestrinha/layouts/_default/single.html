@@ -2,11 +2,14 @@
 <main>
     <article>
         <header class="">
-            <div>
-                <a href="{{.Site.BaseURL}}">Índice</a>
-            </div>
+            {{ partial "date-post" . }}
 
-            <h1 class="">{{- .Title -}}</h1>
+            <div class="container-singlepost-title">
+                <h1 class="">{{- .Title -}}</h1> 
+                {{if .Site.Params.Repo}}
+                <a class="fixme" href="{{.Site.Params.Repo}}/edit/main/content/{{replace .File.Path "\\" "/"}}"><code>fixme</code></a>
+                {{end}}
+            </div>
 
             {{ with .Params.tags }}
             <ul class="tags">
@@ -19,14 +22,6 @@
             {{ end }}
             </ul>
             {{ end }}
-            {{if .Site.Params.Repo}}
-            <ul class="meta">
-                <li>
-                    <a href="{{.Site.Params.Repo}}/edit/main/content/{{replace .File.Path "\\" "/"}}">Sugira modificações</a>
-                </li>
-                <li>{{ partial "time-post" . }}</li>
-            </ul>
-            {{end}}
         </header>
 
         {{- .Content -}}
