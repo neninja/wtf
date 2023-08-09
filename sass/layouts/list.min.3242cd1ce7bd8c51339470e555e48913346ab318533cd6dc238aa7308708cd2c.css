@@ -1,0 +1,1 @@
+.pagination{display:flex;justify-content:space-evenly;list-style:none}ul.cards{list-style:none;padding:0}ul.cards li.card-item:not(:first-child){margin-top:2rem}ul.cards h1{margin:.2rem 0 .5rem}ul.cards p{margin:0}
