@@ -24,7 +24,7 @@ draft: false
 
 ## Desistência
 
-1. Caso queira cancelar, saia com `:cqa`
+1. Caso queira cancelar, saia com `:cq`
 2. Aborte o merge com `git merge --abort`
 
 ## Atlahos úteis
