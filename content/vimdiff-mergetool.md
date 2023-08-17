@@ -29,8 +29,8 @@ draft: false
 
 ## Atlahos úteis
 
-- <kbd>ctrl</kbd><kbd>w</kbd><kbd>w</kbd> alterna
-- <kbd>[</kbd><kbd>c</kbd> e <kbd>]</kbd><kbd>c</kbd> pula entre os diffs
+- `ctrl-w-w` alterna
+- `[c` e `]c` pula entre os diffs
 
 ## Exemplo prático
 

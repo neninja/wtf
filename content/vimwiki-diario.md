@@ -8,13 +8,13 @@ draft: false
 
 [Vimwiki](https://github.com/vimwiki/vimwiki) é um plugin para facilitar criação e edição de arquivos, tentando diminuir ao máximo o atrito entre navegar, criar e atualizar documentos de tarefas. Ele é utilizavel para criação de wikis pessoais ou diário (que não deixa de ser uma wiki). Utilizo-o diariamente da seguinte maneira:
 
-1. Inicio o dia abrindo meu diário do dia anterior <kbd>leader</kbd><kbd>w</kbd><kbd>leader</kbd><kbd>y</kbd> e falo sobre na daily. A tecla `leader` é definição pessoal, utilizo espaço
-2. Faço um split `:split` e crio o documento do dia atual <kbd>leader</kbd><kbd>w</kbd><kbd>leader</kbd><kbd>w</kbd>
+1. Inicio o dia abrindo meu diário do dia anterior `leader-w-leader-y` e falo sobre na daily. A tecla `leader` é definição pessoal, utilizo espaço
+2. Faço um split `:split` e crio o documento do dia atual `leader-w-leader-w`
 3. Movo os itens não concluidos ontem para hoje e/ou adiciono tarefas novas
 4. Mantenho um padrão de escrita que não conflite sobre uma tarefa feita ou não, exemplos:
     1. Para uma tarefa realizada eu não escrevo `fiz pr do ticket X`, mas sim `pr do ticket X`
     2. para uma tarefa que irei realizar não escrevo `vou fazer o pr do ticket X` e muito menos `fazer o pr do ticket X`. Utilizo a mesma estrutura anterior: `pr do ticket X`
-5. Os itens são listas `- [ ]`, cujo podem ser marcados ou desmarcados com <kbd>ctrl</kbd><kbd>space</kbd>
+5. Os itens são listas `- [ ]`, cujo podem ser marcados ou desmarcados com `ctrl-space`
 6. Ao final dia faço um resumo em `retro.wiki`
 
 ## Tarefas complexas
@@ -41,7 +41,7 @@ Ao final do dia confirmo o que foi feito e no arquivo que registro as retros fa�
 | [[2023-07-25]] | ✨ | Finalizei as demandas, documentações pendentes e revisei todos PRs  |
 ```
 
-> Vimwiki tem um comando para criar tabelas de maneira dinamica (`:VimwikiTable`) e juntamente com <kbd>tab</kbd> mantém corretamente os espaçamentos
+> Vimwiki tem um comando para criar tabelas de maneira dinamica (`:VimwikiTable`) e juntamente com `tab` mantém corretamente os espaçamentos
 
 > Deixo o arquivo `retro.wiki` dentro da pasta de diário para ter um link com as datas (`[[2023-07-21]]`)
 
@@ -49,9 +49,9 @@ A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; mon
 
 ## Dicas de navegação
 
-- <kbd>tab</kbd> e <kbd>shift</kbd><kbd>tab</kbd> pula entre links
-- <kbd>enter</kbd> acessa arquivo do link ou cria-o se necessário
-- <kbd>backspace</kbd> retorna para o arquivo anterior antes do pulo do link
+- `tab` e `shift-tab` pula entre links
+- `enter` acessa arquivo do link ou cria-o se necessário
+- `backspace` retorna para o arquivo anterior antes do pulo do link
 
 ## Benefícios
 
