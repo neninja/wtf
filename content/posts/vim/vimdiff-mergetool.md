@@ -31,3 +31,7 @@ draft: false
 
 - <kbd>ctrl</kbd><kbd>w</kbd><kbd>w</kbd> alterna
 - <kbd>[</kbd><kbd>c</kbd> e <kbd>]</kbd><kbd>c</kbd> pula entre os diffs
+
+## Exemplo prático
+
+Para validar estratégias de merge tool, recomendo meu projeto [exemplo_vim-merge-conflict](https://github.com/nenitf/exemplo_vim-merge-conflict) com as instruções de como forçar conflitos
