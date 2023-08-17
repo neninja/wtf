@@ -1,6 +1,7 @@
 baseURL = "https://wtf.neni.dev"
 title = "WTF"
 theme = "palestrinha"
+defaultContentLanguage = "pt-br"
 
 [params]
 repo = "http://github.com/nenitf/wtf"

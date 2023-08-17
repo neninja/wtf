@@ -1,3 +1,3 @@
-<time class="datepost" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }}>
+<time class="datepost" {{ printf `datetime="%s"` (.Date.Format "2006-01-02T15:04:05Z07:00") | safeHTMLAttr }} title='{{ humanize .Date.Day }} of {{ .Date.Format "January 2006" }}'>
     {{- .Date.Format "02/01/2006" -}}
 </time>
