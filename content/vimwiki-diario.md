@@ -34,11 +34,21 @@ Quando o ticket é longo ou faço questão de documentá-lo, crio um um arquivo 
 Ao final do dia confirmo o que foi feito e no arquivo que registro as retros faço um relato sobre como foi o dia: dificuldades, conquistas e sentimento geral do dia.
 
 ```md
-| data           | ❓ | relato                                                              |
-|----------------|----|---------------------------------------------------------------------|
-| [[2023-07-21]] | 👎 | Não consegui suprir nenhuma das demandas                            |
-| [[2023-07-24]] | 🙏 | Obtive a orientação adequada e estou motivado a finalizar a demanda |
-| [[2023-07-25]] | ✨ | Finalizei as demandas, documentações pendentes e revisei todos PRs  |
+💚 MUITO BOM
+🔵 OK
+⚠️  ESTRANHO, SITUAÇÃO PODE FICAR RUIM
+🔴 RUIM
+❌ NÃO FIZ
+
+| data           | ❓ | relato                                                              | sprint |
+|----------------|----|---------------------------------------------------------------------|--------|
+| [[2023-07-31]] | 🔵 | Desenvolvimento dos tickets com a orientação adequada               | 2      |
+| [[2023-07-28]] | ⚠️  | Muitos alinhamentos sobre os tickets, não consegui iniciar nenhum   | 2      |
+| [[2023-07-27]] | 🔵 | Reuniões de inicio de sprint, planning ok                           | 2      |
+| [[2023-07-26]] | ❌ |                                                                     | 1      |
+| [[2023-07-25]] | 💚 | Finalizei as demandas, documentações pendentes e revisei todos PRs  | 1      |
+| [[2023-07-24]] | 🔵 | Obtive a orientação adequada e estou motivado a finalizar a demanda | 1      |
+| [[2023-07-21]] | 🔴 | Não consegui suprir nenhuma das demandas                            | 1      |
 ```
 
 > Vimwiki tem um comando para criar tabelas de maneira dinamica (`:VimwikiTable`) e juntamente com `tab` mantém corretamente os espaçamentos
