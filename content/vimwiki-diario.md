@@ -78,12 +78,7 @@ A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; mon
 
 - `leader-w-c` no modo `Visual` permite colorir
 - `glr` em uma lista ordenada, atualiza os numeros
-- `:VimwikiRebuildTags<CR>:VimwikiGenerateTagLinks TODO backlog STARTED XXX<CR>` listará `:TAGS:` no arquivo
-
-### Estéticos
-
-- `ggVGgq` com texto no modo `visual` permite quebrar a linha
-- Cabeçalhos podem ser feitos com o texto primeiramente alinhados com `:center` ou `:right` e depois corrigidos adicionando/removendo espaços. Fazendo isso e colorindo o background da linha fará uma faixa, ideal para `index.wiki`
+- `:VimwikiRebuildTags` e `:VimwikiGenerateTagLinks TODO STARTED XXX<CR>` listará as tags `:TODO:` `:STARTED:` etc no arquivo
 
 ## Minhas configurações (em Lua)
 
@@ -113,5 +108,5 @@ vim.g.vimwiki_auto_chdir = 1
 
 ## FAQ
 
-1. O plugin tem suporte a `.md`, por que usar `.wiki`? R: Pela facilidade de navegação de `[[]]`
+1. O plugin tem suporte a `.md`, por que usar `.wiki`? R: Pela facilidade de navegação de `[[]]` e o export para html existente com `:VimwikiAll2HTML`
 2. Quais outros usos do vimwiki alémd e trabalho? Wiki pessoal (substituindo Notion), wiki de livros lidos (substituindo blogs)
