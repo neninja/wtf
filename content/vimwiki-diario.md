@@ -70,6 +70,9 @@ A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; mon
 - `tab` e `shift-tab` pula entre links
 - `enter` acessa arquivo do link ou cria-o se necessário
 - `backspace` retorna para o arquivo anterior antes do pulo do link
+- Utilize folds para facilitar a leitura:
+    - `zM` fecha todos `zR` abre todos
+    - `zj` e `zk` navega entre folds
 
 ### Utilitários
 
