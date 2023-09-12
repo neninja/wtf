@@ -47,18 +47,58 @@ Ao final do dia confirmo o que foi feito e no arquivo que registro as retros fa�
 
 A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; montar um [brag document](https://eltonminetto.dev/post/2022-04-14-brag-document/)
 
-## Dicas de navegação
-
-- `tab` e `shift-tab` pula entre links
-- `enter` acessa arquivo do link ou cria-o se necessário
-- `backspace` retorna para o arquivo anterior antes do pulo do link
-
 ## Benefícios
 
 - Daily direto ao ponto
 - Organização pessoal com multiplas sub tarefas
 - Orientação do dia com senso de progresso
 
+## Dicas
+
+### Navegação
+
+- `tab` e `shift-tab` pula entre links
+- `enter` acessa arquivo do link ou cria-o se necessário
+- `backspace` retorna para o arquivo anterior antes do pulo do link
+
+### Utilitários
+
+- `leader-w-c` no modo `Visual` permite colorir
+- `glr` em uma lista ordenada, atualiza os numeros
+- `:VimwikiRebuildTags<CR>:VimwikiGenerateTagLinks TODO backlog STARTED XXX<CR>` listará `:TAGS:` no arquivo
+
+### Estéticos
+
+- `ggVGgq` com texto no modo `visual` permite quebrar a linha
+- Cabeçalhos podem ser feitos com o texto primeiramente alinhados com `:center` ou `:right` e depois corrigidos adicionando/removendo espaços. Fazendo isso e colorindo o background da linha fará uma faixa, ideal para `index.wiki`
+
+## Minhas configurações (em Lua)
+
+```lua
+vim.g.vimwiki_list = {
+  {
+    name = 'my',
+    path = '~/vimwiki/my',
+    auto_generate_links = 1,
+    auto_diary_index = 1,
+    auto_tags = 1,
+    exclude_files = { 'index.wiki' }
+  },
+  {
+    name = 'trampo',
+    path = '~/vimwiki/trampo',
+    auto_generate_links = 1,
+    auto_diary_index = 1,
+    auto_tags = 1,
+    exclude_files = { 'index.wiki' }
+  },
+}
+
+vim.g.vimwiki_folding = 'expr'
+vim.g.vimwiki_auto_chdir = 1
+```
+
 ## FAQ
 
 1. O plugin tem suporte a `.md`, por que usar `.wiki`? R: Pela facilidade de navegação de `[[]]`
+2. Quais outros usos do vimwiki alémd e trabalho? Wiki pessoal (substituindo Notion), wiki de livros lidos (substituindo blogs)
