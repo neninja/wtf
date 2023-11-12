@@ -27,7 +27,7 @@ draft: false
 1. Caso queira cancelar, saia com `:cq`
 2. Aborte o merge com `git merge --abort`
 
-## Atlahos úteis
+## Atalhos úteis
 
 - `ctrl-w-w` alterna
 - `[c` e `]c` pula entre os diffs
