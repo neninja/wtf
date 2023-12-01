@@ -10,12 +10,11 @@ draft: false
 - Open source, livre e gratuito
 - Popular e bem estabelecido na comunidade
 - Utilizável pelo terminal
-- Por ser estilo modal, suporta atalhos/comandos mais "naturais"
+- Por ser um editor estilo modal (não insere texto em qualquer tecla, precisa estar no modo correto), suporta atalhos/comandos mais agradáveis ao invés de `ctrl + ...` `alt + ...` `ctrl + alt + ...`
 - Multi plataforma
 - Configurável através de arquivos que podem ser versionados
-- Expansível com plugins
-- Descarta completamente a utilização do mouse (opcional)
-- Divertido, "gamefica" navegação de código e edição de texto naturalmente
+- Descarta completamente a utilização do mouse, porém pode continuar sendo usado
+- Divertido, pois "gamefica" navegação de código e edição de texto naturalmente
 - Possui o suficiente para programar (sintaxe, sugestões de texto, pesquisa, substituição etc). Caso queira, precisa entender as limitações e saber configurar individualmente *debug*, *go to definition* e *autocomplete* por linguagem
 
 ## Vim ou Neovim?
