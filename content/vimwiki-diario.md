@@ -109,5 +109,5 @@ vim.g.vimwiki_auto_chdir = 1
 
 ## FAQ
 
-1. O plugin tem suporte a `.md`, por que usar `.wiki`? R: Pela facilidade de navegação de `[[]]` e o export para html existente com `:VimwikiAll2HTML`
+1. O plugin tem suporte a `.md`, por que usar `.wiki`? R: Pela facilidade de navegação de `[[]]`, export para html existente com `:VimwikiAll2HTML` e backlinks com `:VWB`
 2. Quais outros usos do vimwiki alémd e trabalho? Wiki pessoal (substituindo Notion), wiki de livros lidos (substituindo blogs)
