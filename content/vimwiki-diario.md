@@ -79,6 +79,7 @@ A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; mon
 - `leader-w-c` no modo `Visual` permite colorir
 - `glr` em uma lista ordenada, atualiza os numeros
 - `:VimwikiRebuildTags` e `:VimwikiGenerateTagLinks TODO STARTED XXX<CR>` listará as tags `:TODO:` `:STARTED:` etc no arquivo
+- `:ts TODO` lista referencias da tag `:TODO:`
 
 ## Minhas configurações (em Lua)
 
