@@ -35,6 +35,6 @@ draft: false
 1. Vou ser um programador melhor com Vim/Neovim? R: Não
 2. Vou ser um programador mais eficiente? R: Depende unicamente das suas necessidades e se o Vim/Neovim sana elas melhor do que outras ferramentas
 3. Preciso de muitos plugins para trabalhar? R: Particularmente, utilizo poucos plugins para manter meu ambiente o mais simples possível
-4. Vou perder muito tempo configurando? R: Depende, você pode configurar o mínimo possível e isso não tornará seu ambiente ruim
+4. Vou perder muito tempo configurando? R: Depende, você pode configurar o mínimo possível e isso não tornará seu ambiente ruim. Criei um ["preset"](https://github.com/nenitf/vi-vim-venci) caso tenha interesse
 5. Quanto tempo para dominar? R: Uns 3 meses de uso constante acho, utilizo desde 2018
 6. Como dominar o mais rápido possível? R: Todo dia aprender pelo menos uma funcionalidade nova preferencialmente teclas de movimentação e edição
