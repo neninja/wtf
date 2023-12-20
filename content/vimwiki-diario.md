@@ -24,19 +24,19 @@ Quando o ticket é longo ou faço questão de documentá-lo, crio um um arquivo 
 ```md
 - [X] criação do ambiente [[XXXXXXXXX]]
 - [ ] investigação do erro de envio de email [[YYYYYYYYY]]
-- [ ] documentação do endpoint abcdefg [[YYYYYYYYY]]
+- [ ] documentação do endpoint abcdefg [[ZZZZZZZZZ]]
 ```
 
 > `[[arquivo]]` é a representação de um link para um `arquivo.wiki`. Basta apertar enter tanto para criá-lo quanto acessá-lo.
 
 ## Retro e brag document
 
-Ao final do dia confirmo o que foi feito e no arquivo que registro as retros faço um relato sobre como foi o dia: dificuldades, conquistas e sentimento geral do dia.
+Ao final do dia confirmo o que foi feito e no arquivo que registro as retros faço um relato sobre como foi o dia: dificuldades, conquistas e sentimento geral do dia. Normalmente crio um arquivo por sprint.
 
 ```md
 💚 MUITO BOM
 🔵 OK
-⚠️  ESTRANHO, SITUAÇÃO PODE FICAR RUIM
+⚠️  ESTRANHO, SITUAÇÃO PODE FICAR PIORAR
 🔴 RUIM
 ❌ NÃO FIZ
 
@@ -53,7 +53,7 @@ Ao final do dia confirmo o que foi feito e no arquivo que registro as retros fa�
 
 > Vimwiki tem um comando para criar tabelas de maneira dinamica (`:VimwikiTable`) e juntamente com `tab` mantém corretamente os espaçamentos
 
-> Deixo o arquivo `retro.wiki` dentro da pasta de diário para ter um link com as datas (`[[2023-07-21]]`)
+> Deixo o arquivo `retro_1.wiki` dentro da pasta de diário para ter um link com as datas (`[[2023-07-21]]`)
 
 A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; montar um [brag document](https://eltonminetto.dev/post/2022-04-14-brag-document/)
 
@@ -77,17 +77,20 @@ A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; mon
 ### Utilitários
 
 - `leader-w-c` no modo `Visual` permite colorir
+- `glx` anula um checkbox
 - `glr` em uma lista ordenada, atualiza os numeros
 - `:VimwikiRebuildTags` e `:VimwikiGenerateTagLinks TODO STARTED XXX<CR>` listará as tags `:TODO:` `:STARTED:` etc no arquivo
 - `:ts TODO` lista referencias da tag `:TODO:`
+- `:VWS :TODO:` também pesquisa na quickfix list
+- `:VWB` gera backlinks, listando todos arquivos que referenciam o buffer aberto
 
 ## Minhas configurações (em Lua)
 
 ```lua
 vim.g.vimwiki_list = {
   {
-    name = 'my',
-    path = '~/vimwiki/my',
+    name = 'pkm',
+    path = '~/vimwiki/pkm',
     auto_generate_links = 1,
     auto_diary_index = 1,
     auto_tags = 1,
@@ -110,4 +113,4 @@ vim.g.vimwiki_auto_chdir = 1
 ## FAQ
 
 1. O plugin tem suporte a `.md`, por que usar `.wiki`? R: Pela facilidade de navegação de `[[]]`, export para html existente com `:VimwikiAll2HTML` e backlinks com `:VWB`
-2. Quais outros usos do vimwiki alémd e trabalho? Wiki pessoal (substituindo Notion), wiki de livros lidos (substituindo blogs)
+2. Quais outros usos do vimwiki além de trabalho? Wiki pessoal (substituindo Notion), wiki de livros lidos (substituindo blogs)
