@@ -160,6 +160,8 @@ draft: false
     - ``git fetch <remote> <branch>`` retorna as referências especificas de uma *branch* de um *remote*
         - Após trazer a referência é possível ir para essa branch com ``git checkout <branch>``
 
+---
+
 ## pull
 
 - Estrutura: ``git pull <remoto> <branch>``
