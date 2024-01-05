@@ -1,12 +1,12 @@
 ---
-title: "Meu fluxo de trabalho com Vimwiki"
-summary: "Utilização como diário para: reunioes e wiki"
+title: "Trabalhando com Vimwiki"
+summary: "Utilização para reunioes, tarefas e wiki"
 date: 2023-03-18T02:57:00-03:00
-tags: ["vim"]
+tags: ["vim", "vimwiki"]
 draft: false
 ---
 
-[Vimwiki](https://github.com/vimwiki/vimwiki) é um plugin para facilitar criação e edição de arquivos, tentando diminuir ao máximo o atrito entre navegar, criar e atualizar documentos de tarefas. Ele é utilizavel para criação de wikis pessoais ou diário (que não deixa de ser uma wiki). Utilizo-o diariamente da seguinte maneira:
+[Vimwiki](https://github.com/vimwiki/vimwiki) é um plugin para facilitar criação e edição de arquivos, tentando diminuir ao máximo o atrito entre navegar, criar e atualizar documentos de tarefas. Ele é utilizavel para criação de wikis pessoais ou diário (que não deixa de ser uma wiki). Utilizo-o diariamente no trabalho em uma wiki separada da seguinte maneira:
 
 1. Inicio o dia abrindo meu diário do dia anterior `leader-w-leader-y` e falo sobre na daily. A tecla `leader` é definição pessoal, utilizo espaço
 2. Faço um split `:split` e crio o documento do dia atual `leader-w-leader-w`
