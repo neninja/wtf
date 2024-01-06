@@ -2,7 +2,7 @@
 title: "Trabalhando com Vimwiki"
 summary: "Utilização para reunioes, tarefas e wiki"
 date: 2023-03-18T02:57:00-03:00
-tags: ["vim", "vimwiki"]
+tags: ["vim", "vimwiki", "org"]
 draft: false
 ---
 

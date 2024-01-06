@@ -2,7 +2,7 @@
 title = "Organizando seu conhecimento com vimwiki"
 summary = "PKM, Bullet journal e segundo cerebro"
 date = "2024-01-05T10:00:00-03:00"
-tags = ["vim", "vimwiki"]
+tags = ["vim", "vimwiki", "org"]
 draft = false
 +++
 
