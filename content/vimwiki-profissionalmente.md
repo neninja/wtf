@@ -88,27 +88,56 @@ A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; mon
 ## Minhas configurações (em Lua)
 
 ```lua
+local function wiki(opts)
+  return vim.tbl_deep_extend('force', {
+    syntax = 'default',
+    ext = 'wiki',
+    index = 'index',
+    auto_diary_index = 1,
+    auto_tags = 1, -- muito bugado, linkando paginas em branco
+    auto_generate_tags = 1,
+    exclude_files = { 'index.wiki', '_diary/*', 'diary/*', 'old/**', 'priv/**' },
+  }, opts)
+end
+
 vim.g.vimwiki_list = {
-  {
+  wiki {
     name = 'pkm',
+    diary_rel_path = "_diary",
     path = '~/vimwiki/pkm',
     auto_generate_links = 1,
-    auto_diary_index = 1,
-    auto_tags = 1,
-    exclude_files = { 'index.wiki' }
+    generated_links_caption = 1,
+    rx_todo = [[\C\%(\<TODO\>\|\<DONE\>\|\<THANKS\>\|\<FIXME\>\|\<CUIDADO\>\|????\|!!!!\)]],
   },
-  {
+
+  wiki {
+    name = 'wtf',
+    path = '~/dev/blog/wtf',
+    rx_todo = [[\C\%(\<TODO\>\|\<DONE\>\|\<THANKS\>\|\<FIXME\>\|\<CUIDADO\>\|????\|!!!!\)]],
+    index = 'README',
+    ext = '.md',
+    syntax = 'markdown',
+  },
+
+  wiki {
     name = 'trampo',
     path = '~/vimwiki/trampo',
-    auto_generate_links = 1,
-    auto_diary_index = 1,
-    auto_tags = 1,
-    exclude_files = { 'index.wiki' }
+    rx_todo =
+    [[\C\%(\<COP\>\|\<CALL\>\|\<TODO\>\|\<BACKLOG\>\|\<RELEASE\>\|\<DONE\>\|\<FLAKY\>\|\<STARTED\>\|\<FIXME\>\|\<FIXED\>\|\<MERGE\>\|\<MY REVIEW\>\|\<PRFIX\>\|\<WAIT QA\>\|\<WAIT\>\|\<BUG\>\|\<NEW\>\|\<REVIEW\>\|\<PR\>\|\<QA\>\|\<P:\>\|\<R:\>\|???\)]],
+  },
+
+  wiki {
+    name = 'sideproject',
+    path = '~/vimwiki/sideproject',
+    rx_todo = [[\C\<\%(TODO\|DONE\|STARTED\|FIXME\|FIXED\|WAIT\)\>]],
   },
 }
 
 vim.g.vimwiki_folding = 'expr'
 vim.g.vimwiki_auto_chdir = 1
+vim.g.vimwiki_links_header = "Links"
+vim.g.vimwiki_tags_header = "Tags"
+vim.g.vimwiki_markdown_link_ext = 1
 ```
 
 ## FAQ
