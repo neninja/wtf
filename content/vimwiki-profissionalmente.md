@@ -83,6 +83,7 @@ A ideia do registro é atacar 2 frentes: facilitar na retro e sprint review; mon
 - `:ts TODO` lista referencias da tag `:TODO:`
 - `:VWS :TODO:` também pesquisa na quickfix list
 - `:VWB` gera backlinks, listando todos arquivos que referenciam o buffer aberto
+- `Vgq` adequa a seleção de linhas de acordo com `textwidth`, removendo ou criando
 
 ## Minhas configurações (em Lua)
 
