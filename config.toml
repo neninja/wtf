@@ -4,5 +4,5 @@ theme = "palestrinha"
 defaultContentLanguage = "pt-br"
 
 [params]
-repo = "http://github.com/nenitf/wtf"
+repo = "http://github.com/neninja/wtf"
 faviconEmoji = "✨"

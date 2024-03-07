@@ -18,7 +18,7 @@ As configurações mínimas necessárias são:
 
 ## SSH
 
-> [Instruções originais](https://gist.github.com/nenitf/433e85b49acc802479654c75535eea2c)
+> [Instruções originais](https://gist.github.com/neninja/433e85b49acc802479654c75535eea2c)
 
 1. Instalar gerador de ssh
     - ubuntu: ``sudo apt install openssh-client``
@@ -47,7 +47,7 @@ Host github.com
   Hostname ssh.github.com
   Port 443
   User git
-  IdentityFile ~/.ssh/id_rsa_nenitf
+  IdentityFile ~/.ssh/id_rsa_neninja
   
  Host gitlab.com
   Hostname altssh.gitlab.com

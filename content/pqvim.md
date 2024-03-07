@@ -108,7 +108,7 @@ Seu cursor está no inicio da linha e você quer renomeá-la, você pode:
 1. Vou ser um programador melhor com Vim/Neovim? R: Não
 2. Vou ser um programador mais eficiente? R: Depende unicamente das suas necessidades e se o Vim/Neovim sana elas melhor do que outras ferramentas
 3. Preciso de muitos plugins para trabalhar? R: Não, eu utilizo pouquissimos para manter meu ambiente o mais simples possível
-4. Vou perder muito tempo configurando? R: Depende, você pode configurar o mínimo possível e isso não tornará seu ambiente ruim. Criei um ["preset"](https://github.com/nenitf/vi-vim-venci) caso tenha interesse
+4. Vou perder muito tempo configurando? R: Depende, você pode configurar o mínimo possível e isso não tornará seu ambiente ruim. Criei um ["preset"](https://github.com/neninja/vi-vim-venci) caso tenha interesse
 5. Quanto tempo para dominar? R: Uns 3 meses de uso constante, mas obviamente depende muito
 6. Como dominar o mais rápido possível? R: Todo dia aprender/ler pelo menos uma funcionalidade nova, preferencialmente teclas de movimentação e edição
 7. Sente falta de algo no vim? Sim, plugins para facilitar a correção de conflitos e *pair programming*

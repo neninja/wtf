@@ -34,4 +34,4 @@ draft: false
 
 ## Exemplo prático
 
-Para validar estratégias de merge tool, recomendo meu projeto [exemplo_vim-merge-conflict](https://github.com/nenitf/exemplo_vim-merge-conflict) com as instruções de como forçar conflitos
+Para validar estratégias de merge tool, recomendo meu projeto [exemplo_vim-merge-conflict](https://github.com/neninja/exemplo_vim-merge-conflict) com as instruções de como forçar conflitos
