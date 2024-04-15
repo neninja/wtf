@@ -32,6 +32,12 @@ draft: false
 - `ctrl-w-w` alterna
 - `[c` e `]c` pula entre os diffs
 
+## Alternativas
+
+### [diffconflicts](https://github.com/whiteinge/diffconflicts)
+
+Plugin de vim/nvim que simplifica o diff entre os arquivos abertos, tendo somente duas janelas: `ours` e `theirs`, sendo a primeira a que deve ser atualizada. A ideia é interessante pois simplifica a quantidade de janelas para a efetividade do diff e por padrão ja presupoe que `ours` é correto. Basta alterar a janela especificada e fechar para confirmar com `:xa` ou `:cq` para abortar aquele arquivo.
+
 ## Exemplo prático
 
 Para validar estratégias de merge tool, recomendo meu projeto [exemplo_vim-merge-conflict](https://github.com/neninja/exemplo_vim-merge-conflict) com as instruções de como forçar conflitos
