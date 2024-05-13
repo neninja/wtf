@@ -6,7 +6,7 @@ tags = ["org"]
 draft = false
 +++
 
-[Encontrei](https://code.google.com/archive/p/vimwiki/wikis/TimeTrackingWithVimwiki.wiki) o [gtimelog](https://gtimelog.org/) esse software pesquisando sobre como adicionar rastreamento de tempo na minha rotina com [Vimwiki](./vimwiki-profissionalmente.md). Ela é simples e opera através de arquivos de texto, facilitando a edição se necessária.
+[Encontrei](https://code.google.com/archive/p/vimwiki/wikis/TimeTrackingWithVimwiki.wiki) o [gtimelog](https://gtimelog.org/) pesquisando sobre como adicionar rastreamento de tempo na minha rotina com [Vimwiki](./vimwiki-profissionalmente.md). Ele é simples e opera através de arquivos de texto, facilitando qualquer edição necessária.
 
 ## Utilização
 
