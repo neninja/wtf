@@ -29,14 +29,17 @@ draft: false
 
 ## Atalhos úteis
 
-- `ctrl-w-w` alterna
+- `ctrl-w-w` alterna janelas
 - `[c` e `]c` pula entre os diffs
+- `dp` simplifica `:diffput` e `do` (*diff obtains*) simplifica `:diffget`, caso não seja necessário o nome do buffer (ideal com [diffconflicts](#diffconflicts))
 
 ## Alternativas
 
-### [diffconflicts](https://github.com/whiteinge/diffconflicts)
+### diffconflicts
 
-Plugin de vim/nvim que simplifica o diff entre os arquivos abertos, tendo somente duas janelas: `ours` e `theirs`, sendo a primeira a que deve ser atualizada. A ideia é interessante pois simplifica a quantidade de janelas para a efetividade do diff e por padrão ja presupoe que `ours` é correto. Basta alterar a janela especificada e fechar para confirmar com `:xa` ou `:cq` para abortar aquele arquivo.
+[Plugin](https://github.com/whiteinge/diffconflicts) de vim/nvim que simplifica o diff entre os arquivos abertos. Tendo somente duas janelas: *ours* e *theirs*, sendo a primeira a que deve ser atualizada. A ideia é interessante pois simplifica a quantidade de janelas para a efetividade do diff e por padrão ja presupoe que `ours` é correto. Basta alterar a janela especificada e fechar para confirmar com `:xa` ou `:cq` para abortar aquele arquivo.
+
+> Lembre de utilizar `[c` `]c` e `do`
 
 ## Exemplo prático
 
